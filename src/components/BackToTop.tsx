@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 
-export default function BackToTopButton() {
+const BackToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -22,11 +22,13 @@ export default function BackToTopButton() {
     isVisible && (
       <button
         onClick={scrollToTop}
-        className='fixed bottom-5 right-5 text-white bg-gray-700 hover:bg-gray-900 font-semibold p-3 rounded-lg transition-all'
+        className='fixed bottom-5 right-5 text-white bg-gray-700 hover:bg-gray-900 font-semibold text-base px-5 py-2.5 rounded-lg transition-all'
         title='Back to Top'
       >
         ↑ Back to Top
       </button>
     )
   );
-}
+};
+
+export default BackToTopButton;

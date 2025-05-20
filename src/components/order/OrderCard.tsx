@@ -1,7 +1,11 @@
 import { Order } from '@/src/type/orders';
 import { formatDate } from '@/src/utils/date';
 
-export const OrderCard = ({ order }: { order: Order }) => (
+interface Props {
+  order: Order;
+}
+
+const OrderCard = ({ order }: Props) => (
   <div className='bg-white dark:bg-gray-800 rounded-xl shadow border border-gray-200 dark:border-gray-700 p-6 hover:shadow-lg transition-shadow mb-5'>
     <div className='flex items-center justify-between mb-3'>
       <span className='text-base font-semibold'>{formatDate(order.time)}</span>
@@ -21,3 +25,5 @@ export const OrderCard = ({ order }: { order: Order }) => (
     </div>
   </div>
 );
+
+export default OrderCard;
