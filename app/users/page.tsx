@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import { getUsers } from '@/src/utils/users/get-users';
 import { User } from '@/src/type/users';
-import UserCard from '@/src/components/user/UserCard';
+import UserCard from '@/src/components/users/UserCard';
 
 const PAGE_SIZE = 40;
 

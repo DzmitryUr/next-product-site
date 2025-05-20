@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { getOrders } from '@/src/utils/orders/get-orders';
 import { getUsers } from '@/src/utils/users/get-users';
 import BackToTop from '@/src/components/BackToTop';
-import OrderCard from '@/src/components/order/OrderCard';
+import OrderCard from '@/src/components/orders/OrderCard';
 import { Order } from '@/src/type/orders';
 import { User } from '@/src/type/users';
 
